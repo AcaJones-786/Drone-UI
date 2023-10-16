@@ -11,11 +11,11 @@ const Layout = () => {
     <>
         <nav style={Navi}>
             <header style={Navigation}>
-                <Link to="/">
+                <Link to="/Home">
                     <img src={logo} alt="logo" width={'75px'}/>
                 </Link>
                 <div style={Shift}>
-                    <Link style={Hyper} to="/">
+                    <Link style={Hyper} to="/Home">
                         <h1>Drone Delivery </h1>
                     </Link>
                 </div>
@@ -25,8 +25,12 @@ const Layout = () => {
                     </Link>
 
                     <Link to="/OrderPage">
-                        <button type="button" class="btn btn-primary">Order Dashboard</button>
-                    </Link>                
+                        <button type="button" className="btn btn-primary">Order Dashboard</button>
+                    </Link>   
+
+                    <Link to="/Reg">
+                        <button type="button" className="btn btn-danger ms-3">Logout</button>
+                    </Link>               
                 </div>
             </header>
         </nav>

@@ -68,7 +68,7 @@ app.post("/login-user", async (req, res) => {
       return res.json({error: "Error loggin in. Please try again"});
     }
   }
-  return res.json({error: "Incorrect password", message: registeredUser.email + " " + registeredUser.password});
+  return res.json({error: "Incorrect password"});
 });
 
 app.post("/homeUser", async (req, res) => {
