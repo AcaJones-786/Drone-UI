@@ -21,9 +21,24 @@ db.once('open', () => {
   console.log('Connected to MongoDB');
 });
 
-app.get('/', function (req, res) {
-    res.send('ola');
-  });
+// app.get('/', function (req, res) {
+//     res.send('ola');
+// });
+
+require ('./models/user');
+const User = mongoose.model('User');
+
+app.post("/register", async (req, res) => {
+    const {username, email, password} = req.body;
+    try {
+        await User.create({username, email, password});
+        res.send({message: "User created successfully"});
+        console.log("yea");
+    } catch (error) {
+        res.send({message: "error creating user"});
+        console.log("na");
+    }
+})
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

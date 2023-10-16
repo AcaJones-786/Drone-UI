@@ -7,6 +7,7 @@ import Order from "./pages/OrderPage";
 import Dashboard from "./pages/DeliveryDashboard";
 import NotFound from "./pages/404";
 import HomePage from './pages/Home';
+import RegisterPage from './pages/Register';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
@@ -15,7 +16,8 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
+          {/* <Route index element={<HomePage />} /> */}
+          <Route index element={<RegisterPage />} />
           <Route path="DeliveryDashboard" element={<Dashboard />} />
           <Route path="OrderPage" element={<Order />} />
           <Route path="*" element={<NotFound />} />
