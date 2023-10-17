@@ -70,12 +70,14 @@ const OrderPage = () => {
                                 ))}
                             </ul>
                         </div>
-                        <p class="lead">Delivery Details:</p>
-                        <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="House No. / Unit No." aria-label="default input example"></input>
-                        <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="Street Name" aria-label="default input example"></input>
-                        <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="Complex / Estate Name" aria-label="default input example"></input>
-                        <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="Postal Code" aria-label="default input example"></input>
-                        <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="Country" aria-label="default input example"></input>
+                        <p className="lead">Grid Details:</p>
+                        <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="height" aria-label="default input example"></input>
+                        <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="width" aria-label="default input example"></input>
+
+                        <p className='lead'>Route Details: <i>for the dashboard, but incase I need to capture any data</i></p>
+                        <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="Id" aria-label="default input example"></input>
+                        <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="status (for the dashboard)" aria-label="default input example"></input>
+                        
                     </form>
                 </div>
                 <div>

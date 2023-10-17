@@ -62,7 +62,7 @@ app.post("/login-user", async (req, res) => {
     const token = jwt.sign({email:registeredUser.email}, JWT_SEC);
 
     if (res.status(201)) {
-      return res.json({status: "ok", message: "Good, logged in", data: token})
+      return res.json({status: "ok", message: "Log in approved", data: token})
     }
     else{
       return res.json({error: "Error loggin in. Please try again"});

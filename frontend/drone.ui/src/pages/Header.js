@@ -28,7 +28,7 @@ const Layout = () => {
                         <button type="button" className="btn btn-primary">Order Dashboard</button>
                     </Link>   
 
-                    <Link to="/Reg">
+                    <Link to="/login">
                         <button type="button" className="btn btn-danger ms-3">Logout</button>
                     </Link>               
                 </div>
