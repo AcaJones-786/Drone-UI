@@ -10,7 +10,7 @@ export default class HomePage extends Component{
     // this.handleSubmit = this.handleSubmit.bind(this);
   }
   componentDidMount(){
-    fetch("http://localhost:3030/homeUser", {
+    fetch("https://3ee9-165-255-27-41.ngrok-free.app/api/users/login", {
             method: "POST",
             crossDomain: true,
             headers: {
@@ -29,6 +29,7 @@ export default class HomePage extends Component{
       
         <section className="container">
           <h1 className="mb-5" style={{textAlign: 'center', color: 'magenta'}}>Hi <i>{this.state.homeUser.username}</i>, Welcome to Drone Delivery</h1>
+          
           <figure>
             <blockquote class="blockquote">
               <h3>Welcome to our Drone Delivery with Optimization Final Year Project!</h3>

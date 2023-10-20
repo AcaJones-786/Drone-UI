@@ -7,7 +7,13 @@ const Shift = {display: 'flex', justifyContent: 'center', alignItems: 'center'};
 const Navi = {padding: "1em", backgroundColor: "#3FB5FF"};
 const Hyper = {textDecoration: 'none', color: 'white', hover: 'none'};
 
+function logOut(){
+    window.localStorage.clear();
+    window.location.href = '/login';
+};
+
 const Layout = () => {
+    
   return (
     <>
         <nav style={Navi}>
@@ -30,7 +36,7 @@ const Layout = () => {
                     </Link>   
 
                     <Link to="/login">
-                        <button type="button" className="btn btn-danger ms-3">Logout</button>
+                        <button type="button" onClick={logOut} className="btn btn-danger ms-3">Logout</button>
                     </Link>               
                 </div>
             </header>
