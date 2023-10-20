@@ -1,6 +1,6 @@
 //Check layout of section vs form and backgrounds
 import React, {Component } from "react";
-import "/App.css";
+import "../App.css";
 
 export default class Login extends Component {
     // constructor(props) {

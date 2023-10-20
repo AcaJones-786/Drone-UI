@@ -4,7 +4,7 @@
     text-align: center; 
     font-family: Krona One;
     background-color: white; 
-    background-image: url("drone.png");
+    background-image: url("./images/drone.png");
     background-repeat: no-repeat; 
     background-size: contain;
     background-attachment: fixed;

@@ -1,7 +1,7 @@
 //Check layout of section vs forms, divs and backgrounds
 import React, { useState } from 'react';
 // import Cart from '../components/cart';
-import "/App.css";
+import "../App.css";
 
 const Grid = {display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gridGap: '3em'};
 

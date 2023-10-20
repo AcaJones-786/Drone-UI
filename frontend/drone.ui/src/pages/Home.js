@@ -1,6 +1,6 @@
 //Do we need this page?
 import React, {Component } from "react";
-import "/App.css";
+import "../App.css";
 
 export default class HomePage extends Component{
   constructor(props){
