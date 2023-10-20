@@ -15,7 +15,8 @@ export default class Register extends Component {
         e.preventDefault();
         const {username, email, password} = this.state;
         console.log(username, email, password);
-        fetch("http://localhost:3030/register", {
+        //fetch("http://localhost:3030/register", {
+            fetch("https://3ee9-165-255-27-41.ngrok-free.app/api/users/register", {
             method: "POST",
             crossDomain: true,
             headers: {
