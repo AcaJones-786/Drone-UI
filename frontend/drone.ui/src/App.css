@@ -1,6 +1,6 @@
 *{
     color: black;
-    font-size: 32; 
+    font-size: 32px; 
     text-align: center; 
     font-family: Krona One;
     background-color: white; 
@@ -13,13 +13,13 @@
 header{
     background-color: #6B8656 ;
     color: white; 
-    font-size:64 ;
+    font-size:64px ;
     height: auto;
 }
 
 h1{
     color: white;
-    font-size:64 ;
+    font-size:64px ;
     padding-top: 20px;
     padding-bottom: 20px;
 }

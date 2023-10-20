@@ -28,7 +28,7 @@ const Layout = () => {
                 </div>
                 <div style={Shift}>
                     <Link to="/DeliveryDashboard">
-                        <button style={{marginRight: '1em'}} type="button" class="btn btn-primary">Delivery Dashboard</button>
+                        <button  type="button" class="btn btn-primary">Delivery Dashboard</button>
                     </Link>
 
                     <Link to="/OrderPage">

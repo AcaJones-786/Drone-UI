@@ -1,6 +1,7 @@
 //Check layout of section vs form and backgrounds
 import React, {Component } from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "/App.css";
 
 export default class Register extends Component {
@@ -57,10 +58,12 @@ export default class Register extends Component {
 
                 <div className="mb-3">
                     <label>Confrm Password</label>
-                    <input type="confirm-password" className="form-control" name="confirm-password" id="confirm-password" placeholder="Confirm Password"  onChange={e=>this.setState({confirmPassword: e.target.value})}/>
+                    <input type="password" className="form-control" name="confirm-password" id="confirm-password" placeholder="Confirm Password"  onChange={e=>this.setState({confirmPassword: e.target.value})}/>
                 </div>
 
-                <a href="/"><button type="submit" class="btn btn-primary">Register</button></a>
+                <Link to="/">
+    <button type="submit" className="btn btn-primary">Register</button>
+</Link>
                 <button><a href="/login">Login</a></button>
             </form>
         );
