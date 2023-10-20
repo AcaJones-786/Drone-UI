@@ -1,3 +1,4 @@
+//Do we need this page?
 import React, {Component } from "react";
 import "/App.css";
 
@@ -28,7 +29,10 @@ export default class HomePage extends Component{
     return (
       
         <section className="container">
-          <h1 className="mb-5" style={{textAlign: 'center', color: 'magenta'}}>Hi <i>{this.state.homeUser.username}</i>, Welcome to Drone Delivery</h1>
+        <header>
+        <h1 className="mb-5" style={{textAlign: 'center', color: 'magenta'}}>Hi <i>{this.state.homeUser.username}</i>, Welcome to Drone Delivery</h1>
+        </header>
+          
           
           <figure>
             <blockquote class="blockquote">

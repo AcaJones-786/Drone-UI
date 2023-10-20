@@ -1,3 +1,4 @@
+//Check layout of section vs forms, divs and backgrounds
 import React, { useState } from 'react';
 // import Cart from '../components/cart';
 import "/App.css";
@@ -36,6 +37,11 @@ const OrderPage = () => {
         <>
             <section className="container"  style={Grid}>
                 <div>
+                <header>
+                <p class="lead">
+                        Fill in the below details to place an order:
+                    </p> 
+                </header>
                     <h1>Order</h1>
 
                     <p class="lead">

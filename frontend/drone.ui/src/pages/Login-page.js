@@ -1,3 +1,4 @@
+//Check layout of section vs form and backgrounds
 import React, {Component } from "react";
 import "/App.css";
 
@@ -138,10 +139,11 @@ async handleSubmit(e) {
 
     render() {
         return (
+          
             <form onSubmit={this.handleSubmit}>
-                <div>
+                <header>
                     <h1>Login</h1>
-                </div>
+                </header>
 
                 {/* <div>
                     <label>Email</label>

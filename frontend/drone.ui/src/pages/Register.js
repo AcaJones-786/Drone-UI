@@ -1,3 +1,4 @@
+//Check layout of section vs form and backgrounds
 import React, {Component } from "react";
 import { useState } from "react";
 import "/App.css";
@@ -33,9 +34,9 @@ export default class Register extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <div className="mb-3">
+                <header className="mb-3">
                     <h1>Register</h1>
-                </div>
+                </header>
 
                 <div className="mb-3">
                     <label>Username</label>

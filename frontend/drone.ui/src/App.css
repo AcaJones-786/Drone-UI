@@ -14,21 +14,24 @@ header{
     background-color: #6B8656 ;
     color: white; 
     font-size:64 ;
+    height: auto;
 }
 
 h1{
     color: white;
     font-size:64 ;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-
-
-div{
+figure{
     border-style: solid;
     border-width: 2px;
     border-color: #C6EDA8 ;
+    background-color: #C6EDA8;
     border-radius:5px;
     margin:auto;
+    text-align: center; 
 }
 
 button{
@@ -40,6 +43,7 @@ button{
 form{border-style: solid;
     border-width: 2px;
     border-color: #C6EDA8 ;
+    background-color: #C6EDA8;
     border-radius:5px;
     margin:auto;}
 
