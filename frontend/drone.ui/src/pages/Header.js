@@ -1,5 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import logo from '../images/drone.png';
+import "/App.css";
 
 const Navigation = {display: "grid", gridTemplateColumns: "1fr 3fr 3fr"};
 const Shift = {display: 'flex', justifyContent: 'center', alignItems: 'center'};

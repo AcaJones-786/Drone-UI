@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 // import Cart from '../components/cart';
+import "/App.css";
 
 const Grid = {display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gridGap: '3em'};
 
