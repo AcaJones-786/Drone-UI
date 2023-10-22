@@ -16,27 +16,27 @@ const Layout = () => {
     
   return (
     <>
-        <nav style={Navi}>
-            <header style={Navigation}>
+        <nav >
+            <header >
                 <Link to="/Home">
-                    <img src={logo} alt="logo" width={'75px'}/>
+                   
                 </Link>
-                <div style={Shift}>
-                    <Link style={Hyper} to="/Home">
+                <div>
+                    <Link  to="/Home">
                         <h1>Drone Delivery </h1>
                     </Link>
                 </div>
-                <div style={Shift}>
+                <div >
                     <Link to="/DeliveryDashboard">
-                        <button  type="button" class="btn btn-primary">Delivery Dashboard</button>
+                        <button  type="button">Delivery Dashboard</button>
                     </Link>
 
                     <Link to="/OrderPage">
-                        <button type="button" className="btn btn-primary">Order Dashboard</button>
+                        <button type="button" >Order Dashboard</button>
                     </Link>   
 
                     <Link to="/login">
-                        <button type="button" onClick={logOut} className="btn btn-danger ms-3">Logout</button>
+                        <button type="button" onClick={logOut}  >Logout</button>
                     </Link>               
                 </div>
             </header>

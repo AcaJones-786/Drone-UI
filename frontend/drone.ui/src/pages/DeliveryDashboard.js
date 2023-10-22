@@ -3,7 +3,7 @@ import "../App.css";
 const DeliveryDashboard = () => {
     return(
         <>
-            <section className="container">
+            <section >
                 <h1>Delivery</h1>
             </section>
         </>

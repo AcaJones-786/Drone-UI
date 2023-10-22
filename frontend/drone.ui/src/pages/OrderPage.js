@@ -36,19 +36,14 @@ const OrderPage = () => {
     return(
         <>
             <section className="container"  style={Grid}>
-                <div>
-                <header>
-                <p class="lead">
-                        Fill in the below details to place an order:
-                    </p> 
-                </header>
-                    <h1>Order</h1>
-
-                    <p class="lead">
-                        Fill in the below details to place an order:
-                    </p>    
+                <div>    
 
                     <form style={{width: '100%'}}>
+                    <h1>Order</h1>
+
+                    <h3 class="lead">
+                        Fill in the below details to place an order:
+                    </h3>
                         <div style={{marginBottom: '1em'}} class="dropdown">
                             <button style={{width: '100%', textAlign: 'left', backgroundColor: 'white', color: '#5A5A5A'}} class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Choose Store
@@ -77,18 +72,19 @@ const OrderPage = () => {
                                 ))}
                             </ul>
                         </div>
-                        <p className="lead">Grid Details:</p>
+                        
                         <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="height" aria-label="default input example"></input>
                         <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="width" aria-label="default input example"></input>
 
-                        <p className='lead'>Route Details: <i>for the dashboard, but incase I need to capture any data</i></p>
+                        <h3 className='lead'>Route Details: </h3>
                         <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="Id" aria-label="default input example"></input>
                         <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="status (for the dashboard)" aria-label="default input example"></input>
                         
                     </form>
                 </div>
-                <div>
-                    <h1>
+                
+                <form>
+                <div><h1>
                         Cart
                     </h1>
                     <h4>Selected Items:</h4>
@@ -98,14 +94,19 @@ const OrderPage = () => {
                         ))}
                     </ul>
                 </div>
+                </form>
+                    
             </section>
             <section className="container">
-                <h2>
+            <form>
+            <h2>
                     Order Finalization
                 </h2>
-                <p>
+                <p id="TotalCost">
                     Total Cost: R{totalCost.toFixed(2)}
                 </p>
+            </form>
+                
 
             </section>
         </>

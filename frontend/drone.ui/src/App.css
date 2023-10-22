@@ -1,4 +1,4 @@
-*{
+body{
     color: black;
     font-size: 32px; 
     text-align: center; 
@@ -6,15 +6,17 @@
     background-color: white; 
     background-image: url("./images/drone.png");
     background-repeat: no-repeat; 
-    background-size: contain;
-    background-attachment: fixed;
+    background-size: cover;
+    background-attachment:scroll;
 }
 
 header{
     background-color: #6B8656 ;
     color: white; 
-    font-size:64px ;
+    font-size:50px ;
     height: auto;
+    padding: 25px;
+    text-align: center;
 }
 
 h1{
@@ -37,19 +39,32 @@ figure{
 button{
     background-color: #6B8656 ;
     color: white;
-    border-radius:5px;
+    border-radius: 25px;
+    margin: 15px;
 }
 
 form{border-style: solid;
     border-width: 2px;
     border-color: #C6EDA8 ;
     background-color: #C6EDA8;
-    border-radius:5px;
-    margin:auto;}
+    border-radius:20px;
+    margin:20px 0px 20px 0px;
+    padding: 20px;
+}
 
 input{
     background-color: white;
-    border-radius: 5px;
+    border-radius: 25px;
+    text-align: center;
+}
+ul, p{
+    border-radius: 20px;
+    background-color: white;
+}
+Link{
+    color: white;
+    border-radius: 25px;
+
 }
 
 
