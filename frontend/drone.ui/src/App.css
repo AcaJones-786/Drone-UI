@@ -13,8 +13,8 @@ body{
 header{
     background-color: #6B8656 ;
     color: white; 
-    font-size:50px ;
-    height: auto;
+    font-size: 30px;
+    height:fit-content;
     padding: 25px;
     text-align: center;
 }
@@ -24,16 +24,17 @@ figure{
     border-width: 2px;
     border-color: #C6EDA8 ;
     background-color: #C6EDA8;
-    border-radius:5px;
-    margin:auto;
+    border-radius:20px;
+    margin:20px 10px 20px 10px ;
     text-align: center; 
+    padding: 20px;
 }
 
-button{
+button,a{
     background-color: #6B8656 ;
     color: white;
-    border-radius: 25px;
-    margin: 15px;
+    border-radius: 30px;
+    
     float: right;
 }
 
@@ -42,8 +43,9 @@ form{border-style: solid;
     border-color: #C6EDA8 ;
     background-color: #C6EDA8;
     border-radius:20px;
-    margin:20px 20px 20px 20px;
+    margin:20px 10px 20px 10px;
     padding: 20px;
+    text-align: center;
 }
 
 input{
@@ -58,6 +60,7 @@ ul, p{
     border-radius: 20px;
     background-color: white;
     padding: 10px;
+    text-align: center;
 }
 .href{
     color: white;

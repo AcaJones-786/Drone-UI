@@ -151,12 +151,12 @@ fetch("https://3ee9-165-255-27-41.ngrok-free.app/api/users/login", {
                 </div> */}
                 <div>
                     
-                    <input type="text" name="name" id="name" placeholder="Name" onChange={(e)=>this.setState({name: e.target.value})}/>
+                    <input style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} class="form-control" type="text" name="name" id="name" placeholder="Name" onChange={(e)=>this.setState({name: e.target.value})}/>
                 </div>
 
                 <div >
                     
-                    <input type="password"  name="password" id="password" placeholder="Password"  onChange={(e)=>this.setState({password: e.target.value})}/>
+                    <input style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} class="form-control" type="password"  name="password" id="password" placeholder="Password"  onChange={(e)=>this.setState({password: e.target.value})}/>
                 </div>
                 <button type="submit" ><a href="/">Login</a></button>
                 <button><a href="/">Sign Up</a></button>

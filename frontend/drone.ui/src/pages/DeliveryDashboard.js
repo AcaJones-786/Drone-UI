@@ -3,9 +3,11 @@ import "../App.css";
 const DeliveryDashboard = () => {
     return(
         <>
-            <section >
+            <form >
                 <h1>Delivery</h1>
-            </section>
+                <p> Here you will find information about your delivery</p>
+                
+            </form>
         </>
     )
 }
