@@ -45,7 +45,7 @@ const OrderPage = () => {
                         Fill in the below details to place an order:
                     </h3>
                         <div style={{marginBottom: '1em'}} class="dropdown">
-                            <button style={{width: '100%', textAlign: 'left', backgroundColor: 'white', color: '#5A5A5A'}} class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Choose Store
                             </button>
                             <ul class="dropdown-menu" >
@@ -55,7 +55,7 @@ const OrderPage = () => {
                             </ul>
                         </div>
                         <div style={{marginBottom: '1em'}} class="dropdown">
-                            <button style={{width: '100%', textAlign: 'left', backgroundColor: 'white', color: '#5A5A5A'}} class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px 5px'}} class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Select Items
                             </button>
                             <ul className="dropdown-menu">
@@ -73,12 +73,12 @@ const OrderPage = () => {
                             </ul>
                         </div>
                         
-                        <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="height" aria-label="default input example"></input>
-                        <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="width" aria-label="default input example"></input>
+                        <input  style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} class="form-control" type="text" placeholder="height" aria-label="default input example"></input>
+                        <input  style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} class="form-control" type="text" placeholder="width" aria-label="default input example"></input>
 
                         <h3 className='lead'>Route Details: </h3>
-                        <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="Id" aria-label="default input example"></input>
-                        <input style={{marginBottom: '1em'}} class="form-control" type="text" placeholder="status (for the dashboard)" aria-label="default input example"></input>
+                        <input style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} class="form-control" type="text" placeholder="Id" aria-label="default input example"></input>
+                        <input style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} class="form-control" type="text" placeholder="status (for the dashboard)" aria-label="default input example"></input>
                         
                     </form>
                 </div>
@@ -90,7 +90,7 @@ const OrderPage = () => {
                     <h4>Selected Items:</h4>
                     <ul>
                         {selectedItems.map((item, index) => (
-                            <li style={{marginTop: '1em'}} key={index}>{item} <button style={{float: 'right'}} onClick={() => handleItemRemove(item, index)}>Remove</button></li>
+                            <li style={{marginTop: '1em'}} key={index}>{item} <button onClick={() => handleItemRemove(item, index)}>Remove</button></li>
                         ))}
                     </ul>
                 </div>

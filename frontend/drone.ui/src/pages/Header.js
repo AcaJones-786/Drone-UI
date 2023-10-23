@@ -4,7 +4,7 @@ import "../App.css";
 
 const Navigation = {display: "grid", gridTemplateColumns: "1fr 3fr 3fr"};
 const Shift = {display: 'flex', justifyContent: 'center', alignItems: 'center'};
-const Navi = {padding: "1em", backgroundColor: "#3FB5FF"};
+
 const Hyper = {textDecoration: 'none', color: 'white', hover: 'none'};
 
 function logOut(){

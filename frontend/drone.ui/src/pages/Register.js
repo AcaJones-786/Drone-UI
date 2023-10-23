@@ -37,35 +37,33 @@ export default class Register extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <header className="mb-3">
                     <h1>Register</h1>
-                </header>
-
                 <div className="mb-3">
-                    <label>Username</label>
-                    <input type="text" className="form-control" name="username" id="username" placeholder="Username" onChange={e=>this.setState({name: e.target.value})}/>
+                    
+                    <input type="text"  name="username" id="username" placeholder="Username" onChange={e=>this.setState({name: e.target.value})}/>
                 </div>
 
-                <div className="mb-3">
-                    <label>Email</label>
-                    <input type="email" className="form-control" name="email" id="email" placeholder="Email"  onChange={e=>this.setState({email: e.target.value})}/>
+                <div >
+                    
+                    <input type="email"  name="email" id="email" placeholder="Email"  onChange={e=>this.setState({email: e.target.value})}/>
                 </div>
 
-                <div className="mb-3">
-                    <label>Password</label>
-                    <input type="password" className="form-control" name="password" id="password" placeholder="Password"  onChange={e=>this.setState({password: e.target.value})}/>
+                <div >
+                    
+                    <input type="password"  name="password" id="password" placeholder="Password"  onChange={e=>this.setState({password: e.target.value})}/>
                 </div>
 
-                <div className="mb-3">
-                    <label>Confrm Password</label>
-                    <input type="password" className="form-control" name="confirm-password" id="confirm-password" placeholder="Confirm Password"  onChange={e=>this.setState({confirmPassword: e.target.value})}/>
+                <div >
+                    
+                    <input type="password"  name="confirm-password" id="confirm-password" placeholder="Confirm Password"  onChange={e=>this.setState({confirmPassword: e.target.value})}/>
                 </div>
-
                 <Link to="/">
-    <button type="submit" className="btn btn-primary">Register</button>
+    <button type="submit">Register</button>
 </Link>
                 <button><a href="/login">Login</a></button>
+                
             </form>
+            
         );
     }
 }

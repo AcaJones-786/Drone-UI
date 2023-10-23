@@ -53,7 +53,7 @@ export default class HomePage extends Component{
           </h3>
             <p>blah blah blah</p>
     
-          <h3 style={{marginTop: '3em'}}>
+            <h3 style={{marginTop: '3em'}}>
             Members
           </h3>
             <p>blah blah blah</p>
