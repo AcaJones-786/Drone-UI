@@ -26,17 +26,17 @@ const Layout = () => {
                         <h1>Drone Delivery </h1>
                     </Link>
                 </div>
-                <div >
+                <div style={{display: 'grid', gridTemplateColumns: "1fr 1fr"}}>
                     <Link to="/DeliveryDashboard">
-                        <button  type="button">Delivery Dashboard</button>
+                        <button style={{color: 'white', border: 'solid 2px'}}  className="btn yoho">Delivery Dashboard</button>
                     </Link>
 
-                    <Link to="/OrderPage">
-                        <button type="button" >Order Dashboard</button>
-                    </Link>   
+                    {/* <Link to="/OrderPage">
+                        <button style={{color: 'white', border: 'solid 2px'}}  className="btn yoho">Order Dashboard</button>
+                    </Link>    */}
 
                     <Link to="/login">
-                        <button type="button" onClick={logOut}  >Logout</button>
+                        <button  style={{color: 'white', border: 'solid 2px'}}  className="btn yoho" onClick={logOut}  >Logout</button>
                     </Link>               
                 </div>
             </header>

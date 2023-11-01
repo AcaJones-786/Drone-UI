@@ -20,7 +20,7 @@ export default class Register extends Component {
     const { name, email, password, confirmPassword } = this.state;
     console.log(name, email, password, confirmPassword);
     //fetch("http://localhost:4000/api/users/register", {
-    fetch("https://4b7a-165-255-100-19.ngrok-free.app/api/users/Register", {
+    fetch("https://dafe-165-255-100-148.ngrok-free.app/api/users/Register", {
       method: "POST",
       crossDomain: true,
       headers: {

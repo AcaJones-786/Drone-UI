@@ -70,3 +70,7 @@ div{
     text-align: center;
     margin: 20px;
 }
+.yoho:hover{
+    background-color: white;
+    color: #6B8656;
+}

@@ -39,7 +39,7 @@ export default class Login extends Component {
     const { name, password } = this.state;
     console.log(name, password);
 
-    fetch("https://4b7a-165-255-100-19.ngrok-free.app/api/users/login", {
+    fetch("https://dafe-165-255-100-148.ngrok-free.app/api/users/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -49,7 +49,7 @@ export default class Login extends Component {
       .then((res) => res.json())
       .then((data) => {
         console.log(data, "Login");
-        if (data.status === "ok") {
+        if (data.token !== undefined) {
           alert("Login Successful");
           window.localStorage.setItem("token", data.token);
           window.location.href = "/Home";
