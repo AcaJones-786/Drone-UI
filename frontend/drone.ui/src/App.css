@@ -31,9 +31,7 @@ figure{
 }
 
 button,a:visited,a:link{
-    background-color: #6B8656 ;
     color: white;
-    border-radius: 30px;
     float: center;
 }
 

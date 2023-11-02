@@ -116,9 +116,9 @@ export default class Register extends Component {
           />
         </div>
         <Link to="/">
-          <button type="submit" onClick={this.handleSubmit}>Register</button>
+          <button style={{color: 'white', backgroundColor:'#6B8656',margin:'15px', padding:'5px', borderRadius:'10px', borderColor:'#6B8656'}} type="submit" onClick={this.handleSubmit}>Register</button>
         </Link>
-        <button>
+        <button style={{color: 'white', backgroundColor:'#6B8656',margin:'15px', padding:'5px', borderRadius:'10px', borderColor:'#6B8656'}}>
           <a href="/login">Login</a>
         </button>
       </form>

@@ -90,7 +90,7 @@ const OrderPage = () => {
                     <h4>Selected Items:</h4>
                     <ul>
                         {selectedItems.map((item, index) => (
-                            <li style={{marginTop: '1em'}} key={index}>{item} <button onClick={() => handleItemRemove(item, index)}>Remove</button></li>
+                            <li style={{marginTop: '1em'}} key={index}>{item} <button style={{color: 'white', backgroundColor:'#6B8656',margin:'15px', padding:'5px', borderRadius:'10px', borderColor:'#6B8656'}} onClick={() => handleItemRemove(item, index)}>Remove</button></li>
                         ))}
                     </ul>
                 </div>

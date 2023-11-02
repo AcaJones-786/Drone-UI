@@ -43,16 +43,16 @@ export default class HomePage extends Component {
         <header>
           <h1
             className="mb-5"
-            style={{ textAlign: "center", color: "magenta" }}
+            style={{ textAlign: "center", color: "white" }}
           >
-            Hi <i>{this.state.homeUser}</i>, Welcome to Drone Delivery
+            Hello <i>{this.state.homeUser}</i>, Welcome to Drone Delivery. 
           </h1>
         </header>
 
         <figure>
           <blockquote class="blockquote">
             <h3>
-              Welcome to our Drone Delivery with Optimization Final Year
+              This is our Drone Delivery with Optimization Final Year
               Project!
             </h3>
           </blockquote>
@@ -65,14 +65,29 @@ export default class HomePage extends Component {
           </figcaption>
         </figure>
 
+        <figure>
         <h3 style={{ marginTop: "5em" }}>Project Overview</h3>
-        <p>blah blah blah</p>
-
-        <h3 style={{ marginTop: "3em" }}>UI Delineation</h3>
-        <p>blah blah blah</p>
-
-        <h3 style={{ marginTop: "3em" }}>Members</h3>
-        <p>blah blah blah</p>
+        <p>Starting out we had a very wide project scope, but ended up narrowing down our third year project to an optimizing drone delivery system. Inspired by Checkers 60 and the drone delivery systems seen used in the USA
+        <br></br>
+        We have created a web-based application on which an order can be made, that will be delivered using our optimally calculated drone delivery routes, as well as a simulatoion demonstrating the delivery.
+        </p> 
+        </figure>
+        
+<figure>
+<h3 style={{ marginTop: "3em" }}>Members</h3>
+        <p>As our project manager, we proudly introduce Alebrecht Oshiek.
+        <br></br>
+        Andrew Botes, and Anton De Vos are our wonderful members who worked on the simulation of the drones. 
+        <br></br>
+        Our frontend creators are Ammaar Peerbhai, Alexis Moolman, and Acseivire Mboto.
+        <br></br>
+        Each group member had their own hand in the contributions made to this project are proud to have it functioning and looking good.
+        Feel free to have a look around!
+        </p>
+        
+        <p></p>
+</figure>
+        
       </section>
     );
   }

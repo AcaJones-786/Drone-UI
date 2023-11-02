@@ -101,7 +101,7 @@ export default class DeliveryDashboard extends Component {
                 onChange={this.handleInputChange}
               />
             </div>
-          <button type="button" onClick={this.createOrder}>Create Order</button>
+          <button type="button" style={{color: 'white', backgroundColor:'#6B8656',margin:'15px', padding:'5px', borderRadius:'10px', borderColor:'#6B8656'}} onClick={this.createOrder}>Create Order</button>
           </div>
 
           <div>
