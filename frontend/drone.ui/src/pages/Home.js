@@ -25,38 +25,49 @@ export default class HomePage extends Component {
     //         console.log(data, "homeUser");
     //         this.setState({homeUser: data.data})
     //     })
-    const accessToken = window.localStorage.getItem("token"); 
+    const accessToken = window.localStorage.getItem("token");
     const tokenParts = accessToken.split(".");
     const payload = JSON.parse(atob(tokenParts[1]));
 
-    const userName = payload["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"];
-    const userEmail = payload["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"];
-    
+    const userName =
+      payload["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"];
+    const userEmail =
+      payload[
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
+      ];
+
     console.log("Name:", userName);
     console.log("Email:", userEmail);
-    
+
     this.setState({ homeUser: userName });
   }
   render() {
     return (
       <section className="container">
-        <header>
-          <h1
+        <header style={{borderRadius: '25px', border: "solid 2px white"}}>
+          <h2
             className="mb-5"
+<<<<<<< Updated upstream
             style={{ textAlign: "center", color: "white" }}
           >
             Hello <i>{this.state.homeUser}</i>, Welcome to Drone Delivery. 
           </h1>
+=======
+            style={{ textAlign: "center", color: "whitesmoke", textDecoration: "underline" }}
+          >
+            Hi <i style={{color: "#425335"}}>{this.state.homeUser}</i>, Welcome to Drone Delivery
+          </h2>
+>>>>>>> Stashed changes
         </header>
 
         <figure>
-          <blockquote class="blockquote">
+          <blockquote className="blockquote">
             <h3>
               This is our Drone Delivery with Optimization Final Year
               Project!
             </h3>
           </blockquote>
-          <figcaption class="blockquote-footer">
+          <figcaption className="blockquote-footer">
             Planned, Developed and Executed by:{" "}
             <cite title="Source Title">
               Albrecht Ohsiek, Alexis Elke Moolman, Ammaar Peerbhai, Andrew
@@ -65,6 +76,7 @@ export default class HomePage extends Component {
           </figcaption>
         </figure>
 
+<<<<<<< Updated upstream
         <figure>
         <h3 style={{ marginTop: "5em" }}>Project Overview</h3>
         <p>Starting out we had a very wide project scope, but ended up narrowing down our third year project to an optimizing drone delivery system. Inspired by Checkers 60 and the drone delivery systems seen used in the USA
@@ -88,6 +100,39 @@ export default class HomePage extends Component {
         <p></p>
 </figure>
         
+=======
+        <div style={{ backgroundColor: "rgb(198, 237, 168, 0.8)", borderRadius: "25px"}}>
+          <h3 style={{ marginTop: "5em" }}>Project Overview</h3>
+          <p>
+            The aim of this project is to find a gap in an industry where drones
+            can be used to assist or improve work alongside humans. Where this
+            gap is found, a prototype drone will be created and implemented to
+            demonstrate its benefits.
+          </p>
+          <p>
+            The objective of this project is to optimise and improve the
+            existing drone delivery systems, by improving on “return-to-home”
+            functions, by optimizing travel routes to not only deliver faster,
+            but safer. It will also be made more energy efficient, and have
+            self-sustainable energy. This will be accomplished by combining
+            software created to identify an optimal delivery path, stay clear of
+            obstacles, can return home when lost, solar-panels, and optimal
+            drone-to-package sizing so that size does not slow the drone down.
+          </p>
+
+          <h3 style={{ marginTop: "1em" }}>Members</h3>
+          <p style={{width: "7cm"}}>
+            <ul style={{ textAlign: "left" }}>
+              <li>Ammaar Peerbhai</li>
+              <li>Albrecht Ohsiek</li>
+              <li>Alexis Elke Moolman</li>
+              <li>Andrew Botes</li>
+              <li>Anton De Vos</li>
+              <li>Acseivire Mboto</li>
+            </ul>
+          </p>
+        </div>
+>>>>>>> Stashed changes
       </section>
     );
   }
