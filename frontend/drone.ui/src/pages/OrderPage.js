@@ -41,21 +41,21 @@ const OrderPage = () => {
                     <form style={{width: '100%'}}>
                     <h1>Order</h1>
 
-                    <h3 class="lead">
+                    <h3 className="lead">
                         Fill in the below details to place an order:
                     </h3>
-                        <div style={{marginBottom: '1em'}} class="dropdown">
-                            <button style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div style={{marginBottom: '1em'}} className="dropdown">
+                            <button style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Choose Store
                             </button>
-                            <ul class="dropdown-menu" >
-                                <li><a class="dropdown-item" href="#">Makro</a></li>
-                                <li><a class="dropdown-item" href="#">Pick n' Pay</a></li>
-                                <li><a class="dropdown-item" href="#">Shoprite</a></li>
+                            <ul className="dropdown-menu" >
+                                <li><a className="dropdown-item" href="#">Makro</a></li>
+                                <li><a className="dropdown-item" href="#">Pick n' Pay</a></li>
+                                <li><a className="dropdown-item" href="#">Shoprite</a></li>
                             </ul>
                         </div>
-                        <div style={{marginBottom: '1em'}} class="dropdown">
-                            <button style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px 5px'}} class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div style={{marginBottom: '1em'}} className="dropdown">
+                            <button style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px 5px'}} className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Select Items
                             </button>
                             <ul className="dropdown-menu">
@@ -73,12 +73,12 @@ const OrderPage = () => {
                             </ul>
                         </div>
                         
-                        <input  style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} class="form-control" type="text" placeholder="height" aria-label="default input example"></input>
-                        <input  style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} class="form-control" type="text" placeholder="width" aria-label="default input example"></input>
+                        <input  style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} className="form-control" type="text" placeholder="height" aria-label="default input example"></input>
+                        <input  style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} className="form-control" type="text" placeholder="width" aria-label="default input example"></input>
 
                         <h3 className='lead'>Route Details: </h3>
-                        <input style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} class="form-control" type="text" placeholder="Id" aria-label="default input example"></input>
-                        <input style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} class="form-control" type="text" placeholder="status (for the dashboard)" aria-label="default input example"></input>
+                        <input style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} className="form-control" type="text" placeholder="Id" aria-label="default input example"></input>
+                        <input style={{width: '100%', textAlign: 'center', backgroundColor: 'white', color: '#5A5A5A', borderRadius: '25px', margin: '10px'}} className="form-control" type="text" placeholder="status (for the dashboard)" aria-label="default input example"></input>
                         
                     </form>
                 </div>

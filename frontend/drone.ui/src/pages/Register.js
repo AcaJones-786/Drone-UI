@@ -20,7 +20,7 @@ export default class Register extends Component {
     const { name, email, password, confirmPassword } = this.state;
     console.log(name, email, password, confirmPassword);
     //fetch("http://localhost:4000/api/users/register", {
-    fetch("https://dafe-165-255-100-148.ngrok-free.app/api/users/Register", {
+    fetch("https://71d9-165-255-100-136.ngrok-free.app/api/users/Register", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -43,14 +43,14 @@ export default class Register extends Component {
         <div className="mb-3">
           <input
             style={{
-              width: "100%",
+              width: "15cm",
               textAlign: "center",
               backgroundColor: "white",
               color: "#5A5A5A",
               borderRadius: "25px",
-              margin: "10px",
+              margin: "auto",
             }}
-            class="form-control"
+            className="form-control"
             type="text"
             name="username"
             id="username"
@@ -62,14 +62,14 @@ export default class Register extends Component {
         <div>
           <input
             style={{
-              width: "100%",
+              width: "15cm",
               textAlign: "center",
               backgroundColor: "white",
               color: "#5A5A5A",
               borderRadius: "25px",
-              margin: "10px",
+              margin: "auto",
             }}
-            class="form-control"
+            className="form-control"
             type="email"
             name="email"
             id="email"
@@ -81,14 +81,14 @@ export default class Register extends Component {
         <div>
           <input
             style={{
-              width: "100%",
+              width: "15cm",
               textAlign: "center",
               backgroundColor: "white",
               color: "#5A5A5A",
               borderRadius: "25px",
-              margin: "10px",
+              margin: "auto",
             }}
-            class="form-control"
+            className="form-control"
             type="password"
             name="password"
             id="password"
@@ -100,14 +100,14 @@ export default class Register extends Component {
         <div>
           <input
             style={{
-              width: "100%",
+              width: "15cm",
               textAlign: "center",
               backgroundColor: "white",
               color: "#5A5A5A",
               borderRadius: "25px",
-              margin: "10px",
+              margin: "auto",
             }}
-            class="form-control"
+            className="form-control"
             type="password"
             name="confirm-password"
             id="confirm-password"

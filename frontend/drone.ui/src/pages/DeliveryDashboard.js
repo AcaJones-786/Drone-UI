@@ -25,15 +25,14 @@ export default class DeliveryDashboard extends Component {
         const accessToken = window.localStorage.getItem("token");
         const tokenParts = accessToken.split(".");
         const payload = JSON.parse(atob(tokenParts[1]));
-        console.log(payload);
-
         const userId = payload._id;
         console.log(userId);
 
         console.log(accessToken);
         
         this.setState({ userID: userId });
-    }
+        console.log(payload);        
+      }    
 
 
 
@@ -52,7 +51,7 @@ export default class DeliveryDashboard extends Component {
     const accessTk = window.localStorage.getItem("token");
     console.log(orderData);
 
-    fetch("https://dafe-165-255-100-148.ngrok-free.app/api/orders/create", {
+    fetch("https://71d9-165-255-100-136.ngrok-free.app/api/orders/create", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

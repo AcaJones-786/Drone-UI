@@ -72,3 +72,7 @@ div{
     background-color: white;
     color: #6B8656;
 }
+p{
+    width: 80%;
+    margin: auto;
+}

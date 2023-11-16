@@ -16,14 +16,14 @@ const Layout = () => {
     
   return (
     <>
-        <nav >
-            <header >
+        <nav>
+            <header  style={{borderRadius: '25px', border: "solid 2px white"}}>
                 <Link to="/Home">
                    
                 </Link>
                 <div>
                     <Link  to="/Home">
-                        <h1>Drone Delivery </h1>
+                        <h1 style={{font: '45px serif'}}>Starling Drone Delivery </h1>
                     </Link>
                 </div>
                 <div style={{display: 'grid', gridTemplateColumns: "1fr 1fr"}}>
