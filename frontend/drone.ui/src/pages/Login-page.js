@@ -21,6 +21,7 @@ export default class Login extends Component {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+
       },
       body: JSON.stringify({ name, password }),
     })
@@ -59,7 +60,7 @@ export default class Login extends Component {
               borderRadius: "25px",
               margin: "auto",
             }}
-            class="form-control"
+            className="form-control"
             type="text"
             name="name"
             id="name"
@@ -78,7 +79,7 @@ export default class Login extends Component {
               borderRadius: "25px",
               margin: "auto",
             }}
-            class="form-control"
+            className="form-control"
             type="password"
             name="password"
             id="password"
