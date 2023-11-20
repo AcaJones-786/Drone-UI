@@ -1,6 +1,8 @@
 //Do we need this page?
 import React, { Component } from "react";
 import "../App.css";
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -10,6 +12,7 @@ export default class HomePage extends Component {
     };
     // this.handleSubmit = this.handleSubmit.bind(this);
   }
+  
 
   componentDidMount() {
     // fetch("https://dafe-165-255-100-148.ngrok-free.app/api/users/login", {
@@ -40,6 +43,7 @@ export default class HomePage extends Component {
     console.log("Email:", userEmail);
 
     this.setState({ homeUser: userName });
+    
   }
   render() {
     return (

@@ -11,13 +11,14 @@ export default class Login extends Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+  
 
   handleSubmit(e) {
     e.preventDefault();
     const { name, password } = this.state;
     console.log(name, password);
 
-    fetch("https://71d9-165-255-100-136.ngrok-free.app/api/users/login", {
+    fetch("http://localhost:4000/api/users/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +43,7 @@ export default class Login extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form style={{width: "70%", margin: "auto", marginTop: "10%"}} onSubmit={this.handleSubmit}>
         <h1>Login</h1>
 
         {/* <div>

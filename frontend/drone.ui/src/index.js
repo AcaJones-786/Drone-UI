@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from "./pages/Header";
-import Order from "./pages/OrderPage";
 import Dashboard from "./pages/DeliveryDashboard";
 import NotFound from "./pages/404";
 import HomePage from './pages/Home';
@@ -21,7 +20,6 @@ export default function App() {
           <Route path="Login" element={<Login />} />
           <Route path="Home" element={<HomePage />} />
           <Route path="DeliveryDashboard" element={<Dashboard />} />
-          <Route path="OrderPage" element={<Order />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

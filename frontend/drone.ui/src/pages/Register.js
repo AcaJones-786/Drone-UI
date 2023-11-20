@@ -1,6 +1,6 @@
 //Check layout of section vs form and backgrounds
 import React, { Component } from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 
@@ -20,7 +20,7 @@ export default class Register extends Component {
     const { name, email, password, confirmPassword } = this.state;
     console.log(name, email, password, confirmPassword);
     //fetch("http://localhost:4000/api/users/register", {
-    fetch("https://71d9-165-255-100-136.ngrok-free.app/api/users/Register", {
+    fetch("http://localhost:4000/api/users/Register", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -31,14 +31,22 @@ export default class Register extends Component {
       },
       body: JSON.stringify({ name, email, password, confirmPassword }),
     })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data, "Register");
-      });
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error('Network response was not ok.');
+      }
+      return res.json();
+    })
+    .then((res) => {
+      console.log(res, "Register");
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });    
   }
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form style={{width: "70%", margin: "auto", marginTop: "10%"}} onSubmit={this.handleSubmit}>
         <h1>Register</h1>
         <div className="mb-3">
           <input
